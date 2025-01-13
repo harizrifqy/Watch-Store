@@ -17,7 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: white;
-    min-height: 3000px;
+    min-height: 5000px;
 }
 
 /* Navbar */
@@ -83,7 +83,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('images/casio.jpg');
+    background-image: url('images/g-shoc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,9 +195,9 @@ body{
 .brand .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 4rem;
     justify-content: center;
-    gap: 40px;
+    gap: 5rem;
 }
 
 .brand .row .brand-card {
@@ -217,17 +217,62 @@ body{
     margin: 1rem auto 0.5rem;
 }
 
+/* Contact section */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+}
 
+.contact .row .maps {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-grup {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+.contact .row form .input-grup input { 
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
 
 
 /* Responsive */
 
-/* Lapotop */
+/* Laptop */
 @media( max-width: 1366px ){
     html {
         font-size: 75%;
     }
 }
+
+
 /* Tablet */
 @media( max-width: 768px ){
     html {
@@ -289,6 +334,18 @@ body{
 
     .brand p {
         font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .maps {
+        height: 30rem;
+    }
+
+    .contact .row form {
+        padding-top: 0;
     }
 }
 
