@@ -17,7 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: white;
-    /* min-height: 2000px; */
+    min-height: 3000px;
 }
 
 /* Navbar */
@@ -83,7 +83,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('images/time.jpg');
+    background-image: url('images/casio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,8 +130,95 @@ body{
     background-color: var(--primary);
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-
 }
+
+/* About Section */
+.about,
+.brand,
+.contact {
+    padding: 8rem 7% 1.4rem;
+}
+.about h2,
+.brand h2,
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+.about h2 span,
+.brand h2 span,
+.contact h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+.about .row .about-img img{
+    width: 100%;
+}
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.about .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+
+/* Brand Section */
+.brand h2
+.contact h2 {
+    margin-bottom: 1.2rem;
+}
+.brand p,
+.contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.brand .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 40px;
+}
+
+.brand .row .brand-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.brand .row .brand-card img{
+    /* border-radius: 50%; */
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.brand .row .brand-card .brand-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
+
+
 
 /* Responsive */
 
@@ -179,6 +266,29 @@ body{
 
     .navbar .navbar-nav a:hover::after{
         transform: scaleX(0.2);
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .brand p {
+        font-size: 1.2rem;
     }
 }
 
